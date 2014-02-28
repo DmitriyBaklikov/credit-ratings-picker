@@ -1,0 +1,85 @@
+.cratingPicker-bg
+  display: none
+  position: absolute
+
+.cratingPicker-wrap
+  height: 278px
+  display: none
+  position: absolute
+  padding: 12px
+  background-color: white
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s
+  border-radius: 3px
+  border: 1px solid #ccc
+  outline: 0 none
+  
+  .cratingPicker
+    max-height: 279px
+    overflow-y: scroll
+    
+.cratingPicker-close
+  z-index: 98
+  display: block
+  position: absolute
+  top: -8px
+  right: -8px
+  height: 0
+  width: 18px
+  padding: 18px 0 0 0
+  overflow: hidden
+  background: #000000 none
+  border: 2.04545454545455px solid #ffffff
+  -moz-border-radius: 18px
+  -webkit-border-radius: 18px
+  border-radius: 18px
+  box-shadow: 0 0 6px #000000, 1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), 1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3)
+  -ms-box-shadow: 0 0 6px #000000, 1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), 1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3)
+  -moz-box-shadow: 0 0 6px #000000, 1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), 1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3)
+  -webkit-box-shadow: 0 0 6px #000000, 1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px 1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), 1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3), -1.63636363636364px -1.63636363636364px 1.63636363636364px rgba(0, 0, 0, 0.3)
+  color: #ffffff
+  cursor: pointer
+  -moz-user-select: none
+  -webkit-user-select: none
+  user-select: none
+
+.cratingPicker-close:before 
+  z-index: 99
+  content: "\D7"
+  display: block
+  text-align: center
+  width: 18px
+  position: absolute
+  font-size: 18px
+  line-height: 18px
+  font-family: "Helvetica Neue", Consolas, Verdana, Tahoma, Calibri, Helvetica, Menlo, "Droid Sans", sans-serif
+  top: -2px
+  left: 0
+
+.ratings-list
+  border-collapse: collapse
+  border-spacing: 0
+  font-size: 12px !important
+  td th
+    font-size: 10px !important
+    padding: 5px
+    color: #333
+  th
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    line-height: 20px
+    font-style: normal
+    font-weight: normal
+    text-align: center
+    text-shadow: white 1px 1px 1px
+    background-color: #C8C8C8
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e3e3e3), color-stop(.6,#B3B3B3))
+    background-image: -moz-linear-gradient(top, #D6D6D6, #B0B0B0, #B3B3B3 90%)
+    padding: 2px 7px
+  td 
+    line-height: 20px
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+    border: 1px solid #ddd
+    text-align: center
+  .js-name
+    text-align: left !important
+  td:hover  
+    background-color: white
